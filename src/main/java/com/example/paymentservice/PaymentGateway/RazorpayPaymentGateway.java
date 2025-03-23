@@ -13,7 +13,7 @@ public class RazorpayPaymentGateway implements IPaymentGateway{
     @Autowired
     RazorpayClient razorpayClient;
 
-    public String getPaymentLink(int amount, String phoneNumber,String orderId, String customerName)  {
+    public String getPaymentLink(Long amount, String phoneNumber,String orderId, String customerName)  {
 
         try{
             JSONObject paymentLinkRequest = new JSONObject();
