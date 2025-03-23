@@ -6,12 +6,12 @@ import lombok.Setter;
 @Getter
 @Setter
 public class InitiatePaymentDto {
-    private int amount;
+    private Long amount;
     private String phoneNumber;
     private String orderId;
     private String customerName;
 
-    public int getAmount() {
+    public Long getAmount() {
         return amount;
     }
 

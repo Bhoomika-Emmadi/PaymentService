@@ -12,7 +12,7 @@ public class PaymentService implements IPaymentService{
     @Autowired
     PaymentGatewayChooserStrategy paymentGatewayChooserStrategy;
 
-    public String initiatePayment(int amount, String phoneNumber,String orderId, String customerName){
+    public String initiatePayment(Long amount, String phoneNumber,String orderId, String customerName){
      return paymentGatewayChooserStrategy.getPaymentGateway().getPaymentLink(amount, phoneNumber, orderId, customerName);
     }
 }

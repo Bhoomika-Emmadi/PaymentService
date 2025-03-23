@@ -1,5 +1,5 @@
 package com.example.paymentservice.services;
 
 public interface IPaymentService {
-    String initiatePayment(int amount, String phoneNumber,String orderId, String customerName);
+    String initiatePayment(Long amount, String phoneNumber,String orderId, String customerName);
 }
